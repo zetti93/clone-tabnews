@@ -4,8 +4,9 @@
   "description": "Projeto do zero de desenvolvimento.",
   "main": "index.js",
   "scripts": {
-    "dev" : "next dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "lint:fix": "prettier . --write",
+    "lint:check": "prettier . --check"
   },
   "author": "",
   "license": "MIT",
@@ -16,5 +17,8 @@
   },
   "engines": {
     "node": "18.20.8"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
